@@ -4,6 +4,11 @@ import Header from './Header';
 import Content from './Content';
 import Card from './Card';
 
+// importing an image get it's path and save it.
+import image1 from './img/image2.png';
+import next from './img/nextjs.png';
+import vercel from './img/vercel.png';
+
 /*
   React Component Guide - Creating and using
 
@@ -32,7 +37,21 @@ function App() {
         <p>
           lorem impsum dolor sit amet mohammed mustafa mr anconi mr blini mr antunes mr lima de purtugal falai guilzzzzzzzzzzzzzzzzzzzzzzzz
         </p>
-        <Card />
+        <Card
+          image={image1}
+          title='React Programs'
+          text='Ben cê não vai querer comprar briga com Vilgax. Como sabe o nome dele me explica isso vô Max'
+        />
+        <Card
+          image={vercel}
+          title='React Native'
+          text='A arma mais poderosa do universo inteiro noo pulso de um muleque. Mas eu voltarei, eu prometo'
+        />
+        <Card
+          image={next}
+          title='React Sound Distribution'
+          text='Quer poder de fogo? Me chama. Farejo o medo, ou até na agua. Acelerei, rapido! Ta querendo uma mão ai?'
+        />
       </Content>
     </>
   );
